@@ -295,7 +295,7 @@
 // }
 //     console.log(`power:${power}`)
 
-const balance = 1000
+// const balance = 1000
 // if (balance<500) 
 //     console.log("test")
 //     console.log("test2")
@@ -342,7 +342,7 @@ const balance = 1000
         
 //         break;
 // }
-// let usermail = []
+// let usermail = BigInt
 // if (usermail) {
 //     console.log(`got you mail ${usermail}`);
 // }
@@ -352,6 +352,36 @@ const balance = 1000
 // }
 // falsy values =
 // false,0,-0,BigInt 0n ,"",null,undefined,NaN
+// truthy values
+// "0",true,[],"false",anything in string(space)
+
+// if (usermail.length===0) {
+//     console.log("array is epty");
+    
+// }
+// const emptyobj = {
+    // age : 20
+// }
+// if (Object.values(emptyobj).length === 0) {
+//     console.log("object is empty");
+    
+// }
+// let val1
+// 1 = 5??10
+// val1 = null?? 4
+// console.log(val1);
+// val1 = undefined??" "??18
+// console.log(val1);
+
+// condition ? true:false
+// const val=100
+// val>200?console.log("good rpoduct"):console.log("ad [roduct");
+
+
+
+
+
+
 
 
 
