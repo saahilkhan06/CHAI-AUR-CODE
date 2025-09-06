@@ -59,9 +59,6 @@
 // console.log(obj3);
 // obj3 = {...obj1,...obj2}
 // console.log(obj3);
-
-const { version } = require("react")
-
 // const users = [
 //     {
 //         id :1,
@@ -290,6 +287,44 @@ const { version } = require("react")
 // else{
 //     console.log("not same");
     
+// const score = 100
+// if (score > 50) {
+//     var power = "fly"
+//     console.log(`power:${power}`);
+    
+// }
+//     console.log(`power:${power}`)
+
+const balance = 1000
+// if (balance<500) 
+//     console.log("test")
+//     console.log("test2")
+
+// if (balance<500) {
+//     console.log("less than 500"); 
+// }else if(balance<750)
+// {
+//     console.log("less than 750");
+    
+// }else if (balance<900){
+//     console.log("less than 900");
+    
+// }
+// else{
+//     console.log("random");
+    
+// }
+// const userloggedin = true
+// const debit = true
+// const loggedinfromgoogle = false
+// const loggedinfromgmail= true
+// if (userloggedin == debit) {
+//     console.log(`allow to but courses`);  
+// }
+// if (loggedinfromgoogle || loggedinfromgmail) {
+//     console.log(`logged in successfully`);
+    
+// }
 
 
 
