@@ -325,6 +325,33 @@ const balance = 1000
 //     console.log(`logged in successfully`);
     
 // }
+// const score = `may`
+// switch (score) {
+//     case "jan":
+//         console.log(`this is ${score}`);
+//         break;
+//     case "feb":
+//         console.log(`this is ${score}`);
+//         break;
+//     case "maay":
+//         console.log(`this is ${score}`);
+//         break;
+
+//     default:
+//         console.log(`none of these are  ${score} 😔`);
+        
+//         break;
+// }
+// let usermail = []
+// if (usermail) {
+//     console.log(`got you mail ${usermail}`);
+// }
+// else{
+//     console.log(`no mail found`);
+    
+// }
+// falsy values =
+// false,0,-0,BigInt 0n ,"",null,undefined,NaN
 
 
 
