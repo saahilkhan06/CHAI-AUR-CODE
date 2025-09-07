@@ -377,16 +377,95 @@
 // const val=100
 // val>200?console.log("good rpoduct"):console.log("ad [roduct");
  
+// element=[1,2,3]
+// for (let i = 0; i <= 10; i++) {
+//     const element = i;
+//     if (element==5) {
+        // console.log("5 number");
+        
+    // }
+    // console.log(element);
+    
+// }
+// for (let i = 0; i <= 10; i++) {
+//     console.log(`outer loop ${i}`);
+    
+//     for (let j = 0; j < 10; j++) {
+//         console.log(`inner loop ${j}`);
+                
+//     }    
+// }
 
+// for (let i =40;i<41;i++) {
+//     for (let j = 1; j <=10; j++) {
+//         console.log(`${i} * ${j} = ${i*j}`);
+        
+        
+//     }
+// }
+// let myarray = ["spidey","bat","super"]
+// for (let index = myarray.length; index >=0; index--) {
+//     const element = myarray[index];
+//     console.log(element);
+    
+// }
+// for (let i = 0; i < 10; i++) {
+//     if (i==6) {
+//         // console.log("5");
+//         console.log('continued ')
+        
+//         continue;
+//     }
+//     console.log(i);
+// }
+// index = 0
+// while (index<=10) {
+//     console.log(`value of index is ${index}`);
+//     index=index+2
+// }
+// let myarray = ['a','b','c','d']
+// let arr=0
+// while (arr<myarray.length) {
+//     console.log(myarray[arr]);
+//     arr++
+    
+// }
+// let i=11
+// do {
+//     console.log(i);
+//     i++
+// } while (i<=10);
+// arr = [1,2,4,5]
+// for(const num of arr){
+//     console.log(num);
+// }
+// greeting = "hello world"
+// for (const greet of greeting) {
+//     console.log(greet);
+    
+// }
+const map1 = new Map()
+map1.set('ind','india')
+map1.set('chn','china')
+map1.set('jpn','japan')
+// console.log(map1);
 
+for (const [key,value] of map1) {
+    // console.log(key,value);
+    
+}
 
-
-
-
-
-
-
-
-
-
+const myobject ={
+    game1:'bgmi',
+    game2:'freefire'
+}
+for (const key in myobject) {
+//   console.log(`${key} shorycut is for ${myobject[key]}`);
+    
+}
+arr=[1,2,3]
+for(const [key] in arr){
+    console.log(key);
+    
+}
 
