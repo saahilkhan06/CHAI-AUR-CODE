@@ -376,7 +376,7 @@
 // condition ? true:false
 // const val=100
 // val>200?console.log("good rpoduct"):console.log("ad [roduct");
-
+ 
 
 
 
