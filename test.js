@@ -444,28 +444,51 @@
 //     console.log(greet);
     
 // }
-const map1 = new Map()
-map1.set('ind','india')
-map1.set('chn','china')
-map1.set('jpn','japan')
+// const map1 = new Map()
+// map1.set('ind','india')
+// map1.set('chn','china')
+// map1.set('jpn','japan')
 // console.log(map1);
 
-for (const [key,value] of map1) {
-    // console.log(key,value);
+// for (const [key,value] of map1) {
+//     console.log(key,value);
     
-}
+// }
 
-const myobject ={
-    game1:'bgmi',
-    game2:'freefire'
-}
-for (const key in myobject) {
+// const myobject ={
+//     'game1':'bgmi',
+//     'game2':'freefire'
+// }
+// for (const key in myobject) {
 //   console.log(`${key} shorycut is for ${myobject[key]}`);
+    // console.log(key);
     
-}
-arr=[1,2,3]
-for(const [key] in arr){
-    console.log(key);
-    
-}
+// }
+// let arr={
+//     "ind":"india",
+//     "usa" : "america",
+//     "uk" : "united kingdom"
+// }
 
+// for(const key in arr){
+//     console.log (arr[key]);
+    
+// }
+
+// const arr=[1,2,3,4]
+// for (const key in arr) {
+//     console.log(key);
+    
+//     }
+
+// const coding = ["java","js",'c','c++','python']
+// coding.forEach( (val) =>  {
+//     console.log(val);
+    
+// })
+// function printme(val) {
+//     console.log(val);
+// }
+// coding.forEach(printme)
+// coding.forEach((val,index,array) =>{
+// })
