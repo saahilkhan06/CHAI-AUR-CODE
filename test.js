@@ -451,7 +451,7 @@
 // console.log(map1);
 
 // for (const [key,value] of map1) {
-//     console.log(key,value);
+    // console.log(key,value);
     
 // }
 
@@ -485,6 +485,7 @@
 // const values=coding.forEach( (val) =>  {
 //     console.log(val);
 //     return val
+    
     
 // })
 // console.log(values);
@@ -548,58 +549,132 @@
 // const initialnum= 0
 // const newnum=mynum.reduce((acc,cvalue) => {return`current balance is${acc} and added wiht${cvalue}`})
 // console.log(newnum);
-const mynum=[1,2,3,4,5,6,7,8]
-// const newnum=mynum.reduce(function(acc,cvalue){
-    // console.log(`acc : ${acc} and cvalue : ${cvalue}`);
-//     return acc+cvalue
-// },0)
-// console.log(newnum);
+// const mynum=[1,2,3,4,5,6,7,8]
+// // const newnum=mynum.reduce(function(acc,cvalue){
+//     // console.log(`acc : ${acc} and cvalue : ${cvalue}`);
+// //     return acc+cvalue
+// // },0)
+// // console.log(newnum);
 
-//  const newnum=mynum.reduce((acc,cvalue)=>acc+cvalue,0) 
-//  console.log(newnum);
+// //  const newnum=mynum.reduce((acc,cvalue)=>acc+cvalue,0) 
+// //  console.log(newnum);
  
-// const shopping =[
+// // const shopping =[
+// //     {
+// //         itemname:"js",
+// //         price:200
+// //     },
+// //     {
+// //         itemname:"python",
+// //         price:300
+// //     },
+// //     {
+// //         itemname:"java",
+// //         price:500
+// //     }
+// // ]
+// // const cart = shopping.reduce((acc,item)=>acc+item.price,0)
+// // console.log(cart);
+
+
+// const mart = [
 //     {
-//         itemname:"js",
-//         price:200
+//        grocery : "daalrice",
+//        price : 100
 //     },
 //     {
-//         itemname:"python",
-//         price:300
+//         dairy:"milk",
+//         price:50
 //     },
 //     {
-//         itemname:"java",
-//         price:500
+//         chocolates : "kitkat",
+//         price:100
+//     },
+//     {
+//         drinks :"pulpy",
+//         price:40
 //     }
 // ]
-// const cart = shopping.reduce((acc,item)=>acc+item.price,0)
-// console.log(cart);
+// const carttotal=mart.reduce((acc,total)=>acc+total.price,0)
+// function applyDiscount(carttotal) {
+//     if (carttotal > 1000) {
+//         return { 
+//             message: "20% discount applied!", 
+//             finalAmount: carttotal - carttotal * 0.2 
+//         };
+//     } else if (carttotal > 500) {
+//         return { 
+//             message: "10% discount applied!", 
+//             finalAmount: carttotal - carttotal * 0.1 
+//         };
+//     } else if (carttotal > 300) {
+//         return { 
+//             message: "Flat 100 off applied!", 
+//             finalAmount: carttotal - 100 
+//         };
+//     } else {
+//         return { 
+//             message: "Offer not applied", 
+//             finalAmount: carttotal 
+//         };
+//     }
+// }
+// console.log(applyDiscount(carttotal));
+// const mart = [
+//     { grocery: "daalrice", price: 100 },
+//     { dairy: "milk", price: 50 },
+//     { chocolates: "kitkat", price: 100 },
+//     { drinks: "pulpy", price: 4000 }
+// ];
 
+// Calculate total
+// const carttotal = mart.reduce((acc, item) => acc + item.price, 0);
 
-const mart = [
-    {
-       grocery : "daalrice",
-       price : 100
-    },
-    {
-        dairy:"milk",
-        price:500
-    },
-    {
-        chocolates : "kitkat",
-        price:1000
-    },
-    {
-        drinks :"pulpy",
-        price:400
-    }
-]
-const carttotal=mart.reduce((acc,total)=>acc+total.price,0)
-if (carttotal>3000) {
-    console.log(carttotal-900);
-}
-else{
-    console.log("offer not applied");
-    
-}
+// Discount logic
+// function applyDiscount(carttotal) {
+//     if (carttotal > 1000) {
+//         return { 
+//             message: "20% discount applied!", 
+//             discount: carttotal * 0.2,
+//             finalAmount: carttotal - carttotal * 0.2 
+//         };
+//     } else if (carttotal > 500) {
+//         return { 
+//             message: "10% discount applied!", 
+//             discount: carttotal * 0.1,
+//             finalAmount: carttotal - carttotal * 0.1 
+//         };
+//     } else if (carttotal > 300) {
+//         return { 
+//             message: "Flat 100 off applied!", 
+//             discount: 100,
+//             finalAmount: carttotal - 100 
+//         };
+//     } else {
+//         return { 
+//             message: "Offer not applied", 
+//             discount: 0,
+//             finalAmount: carttotal 
+//         };
+//     }
+// }
 
+// Generate Bill
+// function generateBill(mart) {
+//     console.log("===== 🛒 MINI BILL 🛒 =====");
+//     mart.forEach((item, index) => {
+//         const [name, value] = Object.entries(item).find(([k]) => k !== "price");
+//         console.log(`${index + 1}. ${name} : ${value} -> ₹${item.price}`);
+//     });
+
+//     console.log("----------------------------");
+//     console.log(`Total: ₹${carttotal}`);
+
+//     const discountInfo = applyDiscount(carttotal);
+//     console.log(discountInfo.message);
+//     console.log(`Discount: -₹${discountInfo.discount}`);
+//     console.log(`Final Amount: ₹${discountInfo.finalAmount}`);
+//     console.log("============================");
+// }
+
+// generateBill(mart);
