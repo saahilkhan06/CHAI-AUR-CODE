@@ -544,13 +544,62 @@
 // );
 
 // console.log(sumWithInitial);
-const mynum = [1,2,3,4,5]
-const initialnum= 0
-const newnum=mynum.reduce((acc,cvalue) => {return`current balance is${acc} and added wiht${cvalue}`})
-console.log(newnum);
+// const mynum = [1,2,3,4,5]
+// const initialnum= 0
+// const newnum=mynum.reduce((acc,cvalue) => {return`current balance is${acc} and added wiht${cvalue}`})
+// console.log(newnum);
+const mynum=[1,2,3,4,5,6,7,8]
+// const newnum=mynum.reduce(function(acc,cvalue){
+    // console.log(`acc : ${acc} and cvalue : ${cvalue}`);
+//     return acc+cvalue
+// },0)
+// console.log(newnum);
 
+//  const newnum=mynum.reduce((acc,cvalue)=>acc+cvalue,0) 
+//  console.log(newnum);
  
+// const shopping =[
+//     {
+//         itemname:"js",
+//         price:200
+//     },
+//     {
+//         itemname:"python",
+//         price:300
+//     },
+//     {
+//         itemname:"java",
+//         price:500
+//     }
+// ]
+// const cart = shopping.reduce((acc,item)=>acc+item.price,0)
+// console.log(cart);
 
 
-
+const mart = [
+    {
+       grocery : "daalrice",
+       price : 100
+    },
+    {
+        dairy:"milk",
+        price:500
+    },
+    {
+        chocolates : "kitkat",
+        price:1000
+    },
+    {
+        drinks :"pulpy",
+        price:400
+    }
+]
+const carttotal=mart.reduce((acc,total)=>acc+total.price,0)
+if (carttotal>3000) {
+    console.log(carttotal-900);
+}
+else{
+    console.log("offer not applied");
+    
+}
 
