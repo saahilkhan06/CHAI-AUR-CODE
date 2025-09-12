@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    <p class="car">porsche</p>
+</body>
+<script>
+    function addlanguage(langname){
+        const li = document.createElement("li")
+        li.innerHTML=`${langname}`
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addlanguage("python")
+    addlanguage("type script")
+    
+
+    function addcar(carname){
+        const p = document.createElement("p")
+        p.innerHTML=`${carname}`
+        document.querySelector(".car").appendChild(p)
+
+    }
+    addcar("volks")
+    addcar("mini")
+    function addoptlang(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector(".language").appendChild(li)
+    }
+    addoptlang("hello")
+
+    const secondlang=document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.appendChild(document.createTextNode("pojo"))
+    secondlang.replaceWith(newli)
+    // secondlang.innerHTML='MOJO'
+
+    // function addcar(carname){
+    //     const p =document.createElement("p")
+    //     p.innerHTML=`${carname}`
+    //     document.querySelector(".language").appendChild(p)
+    // }
+    // addcar("bmw")
+    // addcar("ertiga")
+
+    // function addoptcar(carname){
+    //     const p =document.createElement("p")
+    //     p.appendChild(document.createTextNode(carname))
+    //     document.querySelector(".language").appendChild(p)
+    // }
+    // addoptcar("hello")
+    </script>
+</html>
