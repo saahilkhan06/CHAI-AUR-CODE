@@ -1,1 +1,1 @@
-console.log("hello");
+const buttons = document.querySelectorAll(".button")
